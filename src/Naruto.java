@@ -2,8 +2,12 @@ import java.util.Scanner;
 
 public class Naruto {
     public static void main(String[] args) {
+
+        String resp;
+        int cont = 0;
+
         Scanner scanner = new Scanner(System.in);
-        int score = 0;
+
         System.out.println("****************");
         System.out.println("*   FACULDADE ALFREDO NASSER   *");
         System.out.println("****************");
@@ -14,175 +18,245 @@ public class Naruto {
         System.out.println("****************");
         System.out.println("Olá, bem-vindo ao Quiz sobre o anime Naruto!");
 
-        System.out.println("Pergunta 1: Quem ensinou o rasengan para o Naruto?");
-        System.out.println("a) Minato");
-        System.out.println("b) Jiraiya");
-        System.out.println("c) Kakashi");
-        System.out.println("d) Isobu");
-        System.out.println("e) Sasuke");
-        System.out.print("Sua resposta: ");
-        String resposta1 = scanner.nextLine();
-        if (resposta1.equalsIgnoreCase("b")) {
-            score++;
+        // Perguntas e respostas
+        Questao q1= new Questao();
+        q1.pergunta = "Pergunta 1: Quem ensinou o rasengan para o Naruto?";
+        q1.opcaoA= "a) Minato";
+        q1.opcaoB= "b) Jiraiya";
+        q1.opcaoC= "c) Kakashi";
+        q1.opcaoD= "d) Isobu";
+        q1.opcaoE= "e) Sasuke";
+        q1.correta= "b";
+
+        q1.escrevaQuestao();
+        resp = q1.leiaResposta();
+        if(q1.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 2: Quem matou os pais do Naruto?");
-        System.out.println("a) Kurama (Kyuubi)");
-        System.out.println("b) Madara Uchiha");
-        System.out.println("c) Danzo Shimura");
-        System.out.println("d) Akatsuki");
-        System.out.println("e) Hiruzen");
-        System.out.print("Sua resposta: ");
-        String resposta2 = scanner.nextLine();
-        if (resposta2.equalsIgnoreCase("a")) {
-            score++;
+
+        Questao q2= new Questao();
+        q2.pergunta = "Pergunta 2: Quem matou os pais do Naruto?";
+        q2.opcaoA= "a) Kurama (Kyuubi)";
+        q2.opcaoB= "b) Madara Uchiha";
+        q2.opcaoC= "c) Danzo Shimura";
+        q2.opcaoD= "d) Akatsuki";
+        q2.opcaoE= "e) Hiruzen";
+        q2.correta= "a";
+
+        q2.escrevaQuestao();
+        resp = q2.leiaResposta();
+        if(q2.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 3: Quem foi o primeiro(a) a se tornar chunin?");
-        System.out.println("a) Sakura");
-        System.out.println("b) Lee");
-        System.out.println("c) Neji");
-        System.out.println("d) Gaara");
-        System.out.println("e) Shikamaru");
-        System.out.print("Sua resposta: ");
-        String resposta3 = scanner.nextLine();
-        if (resposta3.equalsIgnoreCase("e")) {
-            score++;
+
+        Questao q3= new Questao();
+        q3.pergunta = "Pergunta 3: Quem foi o primeiro(a) a se tornar chunin?";
+        q3.opcaoA= "a) Sakura";
+        q3.opcaoB= "b) Lee";
+        q3.opcaoC= "c) Neji";
+        q3.opcaoD= "d) Gaara";
+        q3.opcaoE= "e) Shikamaru";
+        q3.correta= "e";
+
+        q3.escrevaQuestao();
+        resp = q3.leiaResposta();
+        if(q3.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 4: Quem é a progenitora do Chakra?");
-        System.out.println("a) Sakura");
-        System.out.println("b) Konan");
-        System.out.println("c) Hinata");
-        System.out.println("d) Kaguya");
-        System.out.println("e) Tenten");
-        System.out.print("Sua resposta: ");
-        String resposta4 = scanner.nextLine();
-        if (resposta4.equalsIgnoreCase("d")) {
-            score++;
+
+        Questao q4= new Questao();
+        q4.pergunta = "Pergunta 4: Quem é a progenitora do Chakra?";
+        q4.opcaoA= "a) Sakura";
+        q4.opcaoB= "b) Konan";
+        q4.opcaoC= "c) Hinata";
+        q4.opcaoD= "d) Kaguya";
+        q4.opcaoE= "e) Tenten";
+        q4.correta= "d";
+
+        q4.escrevaQuestao();
+        resp = q4.leiaResposta();
+        if(q4.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 5: Quem criou a Akatsuki?");
-        System.out.println("a) Yahiko");
-        System.out.println("b) Obito");
-        System.out.println("c) Nagato/Pain");
-        System.out.println("d) Kaguya");
-        System.out.println("e) Itachi");
-        System.out.print("Sua resposta: ");
-        String resposta5 = scanner.nextLine();
-        if (resposta5.equalsIgnoreCase("c")) {
-            score++;
+
+        Questao q5= new Questao();
+        q5.pergunta = "Pergunta 5: Quem criou a Akatsuki?";
+        q5.opcaoA= "a) Yahiko";
+        q5.opcaoB= "b) Obito";
+        q5.opcaoC= "c) Nagato/Pain";
+        q5.opcaoD= "d) Kaguya";
+        q5.opcaoE= "e) Itachi";
+        q5.correta= "c";
+
+        q5.escrevaQuestao();
+        resp = q5.leiaResposta();
+        if(q5.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 6: Quem matou Jiraiya?");
-        System.out.println("a) Yahiko");
-        System.out.println("b) Obito");
-        System.out.println("c) Nagato/Pain");
-        System.out.println("d) Konan");
-        System.out.println("e) Itachi");
-        System.out.print("Sua resposta: ");
-        String resposta6 = scanner.nextLine();
-        if (resposta6.equalsIgnoreCase("c")) {
-            score++;
+
+        Questao q6= new Questao();
+        q6.pergunta = "Pergunta 6: Quem matou Jiraiya?";
+        q6.opcaoA= "a) Yahiko";
+        q6.opcaoB= "b) Obito";
+        q6.opcaoC= "c) Nagato/Pain";
+        q6.opcaoD= "d) Kaguya";
+        q6.opcaoE= "e) Itachi";
+        q6.correta= "c";
+
+        q6.escrevaQuestao();
+        resp = q6.leiaResposta();
+        if(q6.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 7: Quem matou Asuma Sarutobi?");
-        System.out.println("a) Yahiko");
-        System.out.println("b) Kakuzu");
-        System.out.println("c) Kisame");
-        System.out.println("d) Konan");
-        System.out.println("e) Hidan");
-        System.out.print("Sua resposta: ");
-        String resposta7 = scanner.nextLine();
-        if (resposta7.equalsIgnoreCase("e")) {
-            score++;
+
+        Questao q7= new Questao();
+        q7.pergunta = "Pergunta 7: Quem matou Asuma Sarutobi?";
+        q7.opcaoA= "a) Yahiko";
+        q7.opcaoB= "b) Kakuzu";
+        q7.opcaoC= "c) Kisame";
+        q7.opcaoD= "d) Konan";
+        q7.opcaoE= "e) Hidan";
+        q7.correta= "e";
+
+        q7.escrevaQuestao();
+        resp = q7.leiaResposta();
+        if(q7.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 8: Qual é o nome do lugar onde Naruto e Sasuke lutam no final do Shippuden?");
-        System.out.println("a) Vale do Fim");
-        System.out.println("b) Floresta da Morte");
-        System.out.println("c) Poço Esquecido");
-        System.out.println("d) Floresta do Fim");
-        System.out.println("e) Vale da Morte");
-        System.out.print("Sua resposta: ");
-        String resposta8 = scanner.nextLine();
-        if (resposta8.equalsIgnoreCase("a")) {
-            score++;
+
+        Questao q8= new Questao();
+        q8.pergunta = "Pergunta 8: Qual é o nome do lugar onde Naruto e Sasuke lutam no final do Shippuden?";
+        q8.opcaoA= "a) Vale do Fim";
+        q8.opcaoB= "b) Floresta da Morte";
+        q8.opcaoC= "c) Poço Esquecido";
+        q8.opcaoD= "d) Floresta do Fim";
+        q8.opcaoE= "e) Vale da Morte";
+        q8.correta= "a";
+
+        q8.escrevaQuestao();
+        resp = q8.leiaResposta();
+        if(q8.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 9: Quem lutou e derrotou Sasori?");
-        System.out.println("a) Sakura e Tenten");
-        System.out.println("b) Sakura e Chiyo-baa");
-        System.out.println("c) Sakura e Tsunade");
-        System.out.println("d) Gaara e Naruto");
-        System.out.println("e) Sasuke e Naruto");
-        System.out.print("Sua resposta: ");
-        String resposta9 = scanner.nextLine();
-        if (resposta9.equalsIgnoreCase("b")) {
-            score++;
+
+        Questao q9= new Questao();
+        q9.pergunta = "Pergunta 9: Quem lutou e derrotou Sasori?";
+        q9.opcaoA= "a) Sakura e Tenten";
+        q9.opcaoB= "b) Floresta da Morte";
+        q9.opcaoC= "c) Sakura e Tsunade";
+        q9.opcaoD= "d) Gaara e Naruto";
+        q9.opcaoE= "e) Sasuke e Naruto";
+        q9.correta= "b";
+
+        q9.escrevaQuestao();
+        resp = q9.leiaResposta();
+        if(q9.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 10: Quem é o líder do Clã Uchiha?");
-        System.out.println("a) Fugaku Uchiha");
-        System.out.println("b) Madara Uchiha");
-        System.out.println("c) Itachi Uchiha");
-        System.out.println("d) Sasuke Uchiha");
-        System.out.println("e) Obito Uchiha");
-        System.out.print("Sua resposta: ");
-        String resposta10 = scanner.nextLine();
-        if (resposta10.equalsIgnoreCase("b")) {
-            score++;
+
+        Questao q10= new Questao();
+        q10.pergunta = "Pergunta 10: Quem é o líder do Clã Uchiha?";
+        q10.opcaoA= "a) Fugaku Uchiha";
+        q10.opcaoB= "b) Madara Uchiha";
+        q10.opcaoC= "c) Itachi Uchiha";
+        q10.opcaoD= "d) Sasuke Uchiha";
+        q10.opcaoE= "e) Obito Uchiha";
+        q10.correta= "b";
+
+        q10.escrevaQuestao();
+        resp = q10.leiaResposta();
+        if(q10.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 11: Quem foi o mentor de Naruto durante o treinamento do Modo Sábio?");
-        System.out.println("a) Jiraiya");
-        System.out.println("b) Kakashi");
-        System.out.println("c) Fukasaku");
-        System.out.println("d) Gamabunta");
-        System.out.println("e) Orochimaru");
-        System.out.print("Sua resposta: ");
-        String resposta11 = scanner.nextLine();
-        if (resposta11.equalsIgnoreCase("c")) {
-            score++;
+
+        Questao q11= new Questao();
+        q11.pergunta = "Pergunta 11: Quem foi o mentor de Naruto durante o treinamento do Modo Sábio?";
+        q11.opcaoA= "a) Jiraiya";
+        q11.opcaoB= "b) Kakashi";
+        q11.opcaoC= "c) Fukasaku";
+        q11.opcaoD= "d) Gamabunta";
+        q11.opcaoE= "e) Orochimaru";
+        q11.correta= "c";
+
+        q11.escrevaQuestao();
+        resp = q11.leiaResposta();
+        if(q11.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 12: Qual é o nome do pai de Naruto?");
-        System.out.println("a) Minato Namikaze");
-        System.out.println("b) Hiruzen Sarutobi");
-        System.out.println("c) Jiraiya");
-        System.out.println("d) Hashirama Senju");
-        System.out.println("e) Tobirama Senju");
-        System.out.print("Sua resposta: ");
-        String resposta12 = scanner.nextLine();
-        if (resposta12.equalsIgnoreCase("a")) {
-            score++;
+
+        Questao q12= new Questao();
+        q12.pergunta = "Pergunta 12: Qual é o nome do pai de Naruto?";
+        q12.opcaoA= "a) Minato Namikaze";
+        q12.opcaoB= "b) Hiruzen Sarutobi";
+        q12.opcaoC= "c) Jiraiya";
+        q12.opcaoD= "d) Hashirama Senju";
+        q12.opcaoE= "e) Tobirama Senju";
+        q12.correta= "a";
+
+        q12.escrevaQuestao();
+        resp = q12.leiaResposta();
+        if(q12.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 13: Quem é o portador do Sharingan original?");
-        System.out.println("a) Itachi Uchiha");
-        System.out.println("b) Shisui Uchiha");
-        System.out.println("c) Madara Uchiha");
-        System.out.println("d) Sasuke Uchiha");
-        System.out.println("e) Obito Uchiha");
-        System.out.print("Sua resposta: ");
-        String resposta13 = scanner.nextLine();
-        if (resposta13.equalsIgnoreCase("c")) {
-            score++;
+
+        Questao q13= new Questao();
+        q13.pergunta = "Pergunta 13: Quem é o portador do Sharingan original?";
+        q13.opcaoA= "a) Itachi Uchiha";
+        q13.opcaoB= "b) Shisui Uchiha";
+        q13.opcaoC= "c) Madara Uchiha";
+        q13.opcaoD= "d) Sasuke Uchiha";
+        q13.opcaoE= "e) Obito Uchiha";
+        q13.correta= "c";
+
+        q13.escrevaQuestao();
+        resp = q13.leiaResposta();
+        if(q13.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 14: Quem é conhecido como o 'Demônio do Lago Oculto'?");
-        System.out.println("a) Kisame Hoshigaki");
-        System.out.println("b) Zabuza Momochi");
-        System.out.println("c) Suigetsu Hozuki");
-        System.out.println("d) Karin Uzumaki");
-        System.out.println("e) Haku");
-        System.out.print("Sua resposta: ");
-        String resposta14 = scanner.nextLine();
-        if (resposta14.equalsIgnoreCase("a")) {
-            score++;
+
+        Questao q14= new Questao();
+        q14.pergunta = "Pergunta 14: Quem é conhecido como o 'Demônio do Lago Oculto'?";
+        q14.opcaoA= "a) Kisame Hoshigaki";
+        q14.opcaoB= "b) Zabuza Momochi";
+        q14.opcaoC= "c) Suigetsu Hozuki";
+        q14.opcaoD= "d) Karin Uzumaki";
+        q14.opcaoE= "e) Haku";
+        q14.correta= "a";
+
+        q14.escrevaQuestao();
+        resp = q14.leiaResposta();
+        if(q14.isCorreta(resp)){
+            cont++;
         }
-        System.out.println("Pergunta 15: Quem é o criador do Jutsu de Clone das Sombras?");
-        System.out.println("a) Jiraiya");
-        System.out.println("b) Minato Namikaze");
-        System.out.println("c) Kakashi Hatake");
-        System.out.println("d) Hiruzen Sarutobi");
-        System.out.println("e) Naruto Uzumaki");
-        System.out.print("Sua resposta: ");
-        String resposta15 = scanner.nextLine();
-        if (resposta15.equalsIgnoreCase("b")) {
-            score++;
+
+        Questao q15= new Questao();
+        q15.pergunta = "Pergunta 15: Quem é o criador do Jutsu de Clone das Sombras?";
+        q15.opcaoA= "a) Jiraiya";
+        q15.opcaoB= "b) Minato Namikaze";
+        q15.opcaoC= "c) Kakashi Hatake";
+        q15.opcaoD= "d) Hiruzen Sarutobi";
+        q15.opcaoE= "e) Naruto Uzumaki";
+        q15.correta= "b";
+
+        q15.escrevaQuestao();
+        resp = q15.leiaResposta();
+        if(q15.isCorreta(resp)){
+            cont++;
         }
-        // Display final score
+
+        // Calcular a porcentagem de acertos
+        double percentage = ((double) cont / 15.0) * 100;
+
+        // Exibir o resultado final
         System.out.println("****************");
         System.out.println("*   RESULTADO FINAL   *");
         System.out.println("****************");
-        System.out.println("Você acertou " + score + "");
+        System.out.println("Você acertou " + cont + " respostas.");
+        System.out.println("Você errou " + (15-cont) + " respostas.");
+        System.out.println("Porcentagem de acertos: " + String.format("%.2f", percentage) + "%");
+        System.out.println("****************");
+
+        // Fechar o scanner
+        scanner.close();
     }
 }
