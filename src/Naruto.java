@@ -94,14 +94,14 @@ public class Naruto {
             cont++;
         }
 
-        Questao q6= new Questao();
-        q6.pergunta = "Pergunta 6: Quem matou Jiraiya?";
-        q6.opcaoA= "a) Yahiko";
-        q6.opcaoB= "b) Obito";
-        q6.opcaoC= "c) Nagato/Pain";
-        q6.opcaoD= "d) Kaguya";
-        q6.opcaoE= "e) Itachi";
-        q6.correta= "c";
+        Questao q6 = new Questao();
+        q6.pergunta = "Pergunta 6: Qual é a técnica usada pelo Rock Lee que não requer chakra?";
+        q6.opcaoA = "a) Rasengan";
+        q6.opcaoB = "b) Genjutsu";
+        q6.opcaoC = "c) Taijutsu";
+        q6.opcaoD = "d) Ninjutsu";
+        q6.opcaoE = "e) Kuchiyose no Jutsu";
+        q6.correta = "c";
 
         q6.escrevaQuestao();
         resp = q6.leiaResposta();
