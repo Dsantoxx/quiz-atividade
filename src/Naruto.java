@@ -49,14 +49,15 @@ public class Naruto {
             cont++;
         }
 
-        Questao q3= new Questao();
-        q3.pergunta = "Pergunta 3: Quem foi o primeiro(a) a se tornar chunin?";
-        q3.opcaoA= "a) Sakura";
-        q3.opcaoB= "b) Lee";
-        q3.opcaoC= "c) Neji";
-        q3.opcaoD= "d) Gaara";
-        q3.opcaoE= "e) Shikamaru";
-        q3.correta= "e";
+        Questao q3 = new Questao();
+        q3.pergunta = "Pergunta 3: Qual é o nome do bijuu que está selado dentro do Naruto?";
+        q3.opcaoA = "a) Shukaku";
+        q3.opcaoB = "b) Matatabi";
+        q3.opcaoC = "c) Gyuki";
+        q3.opcaoD = "d) Kurama";
+        q3.opcaoE = "e) Chomei";
+
+        q3.correta = "d";
 
         q3.escrevaQuestao();
         resp = q3.leiaResposta();
