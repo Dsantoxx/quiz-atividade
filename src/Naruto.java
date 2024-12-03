@@ -139,14 +139,14 @@ public class Naruto {
             cont++;
         }
 
-        Questao q9= new Questao();
-        q9.pergunta = "Pergunta 9: Quem lutou e derrotou Sasori?";
-        q9.opcaoA= "a) Sakura e Tenten";
-        q9.opcaoB= "b) Floresta da Morte";
-        q9.opcaoC= "c) Sakura e Tsunade";
-        q9.opcaoD= "d) Gaara e Naruto";
-        q9.opcaoE= "e) Sasuke e Naruto";
-        q9.correta= "b";
+        Questao q9 = new Questao();
+        q9.pergunta = "Pergunta 9: Qual foi o presente que Kakashi deu a Naruto após ele se tornar Genin?";
+        q9.opcaoA = "a) Um pergaminho de jutsus";
+        q9.opcaoB = "b) Um kunai especial";
+        q9.opcaoC = "c) Treinamento exclusivo";
+        q9.opcaoD = "d) A primeira missão oficial";
+        q9.opcaoE = "e) Um colete de Chuunin";
+        q9.correta = "d";
 
         q9.escrevaQuestao();
         resp = q9.leiaResposta();
