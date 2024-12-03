@@ -34,14 +34,14 @@ public class Naruto {
             cont++;
         }
 
-        Questao q2= new Questao();
-        q2.pergunta = "Pergunta 2: Quem matou os pais do Naruto?";
-        q2.opcaoA= "a) Kurama (Kyuubi)";
-        q2.opcaoB= "b) Madara Uchiha";
-        q2.opcaoC= "c) Danzo Shimura";
-        q2.opcaoD= "d) Akatsuki";
-        q2.opcaoE= "e) Hiruzen";
-        q2.correta= "a";
+        Questao q2 = new Questao();
+        q2.pergunta = "Pergunta 2: Qual é o nome do clã do qual o Sasuke faz parte?";
+        q2.opcaoA = "a) Uzumaki";
+        q2.opcaoB = "b) Hyuuga";
+        q2.opcaoC = "c) Uchiha";
+        q2.opcaoD = "d) Senju";
+        q2.opcaoE = "e) Akimichi";
+        q2.correta = "c";
 
         q2.escrevaQuestao();
         resp = q2.leiaResposta();
