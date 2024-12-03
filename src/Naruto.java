@@ -109,14 +109,14 @@ public class Naruto {
             cont++;
         }
 
-        Questao q7= new Questao();
-        q7.pergunta = "Pergunta 7: Quem matou Asuma Sarutobi?";
-        q7.opcaoA= "a) Yahiko";
-        q7.opcaoB= "b) Kakuzu";
-        q7.opcaoC= "c) Kisame";
-        q7.opcaoD= "d) Konan";
-        q7.opcaoE= "e) Hidan";
-        q7.correta= "e";
+        Questao q7 = new Questao();
+        q7.pergunta = "Pergunta 7: Qual é o nome do time formado por Naruto, Sasuke e Sakura?";
+        q7.opcaoA = "a) Time 5";
+        q7.opcaoB = "b) Time 7";
+        q7.opcaoC = "c) Time 10";
+        q7.opcaoD = "d) Time 3";
+        q7.opcaoE = "e) Time 9";
+        q7.correta = "b";
 
         q7.escrevaQuestao();
         resp = q7.leiaResposta();

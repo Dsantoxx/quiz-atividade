@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a9d03ea-1823-4a2e-8bed-542dcab0c726" name="Changes" comment="mudança" />
+    <list default="true" id="4a9d03ea-1823-4a2e-8bed-542dcab0c726" name="Changes" comment="mudança 3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +72,39 @@
       <option name="project" value="LOCAL" />
       <updated>1733252694083</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mudança">
+      <option name="closed" value="true" />
+      <created>1733252787584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733252787584</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mudança 1">
+      <option name="closed" value="true" />
+      <created>1733252858573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733252858573</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mudança 2">
+      <option name="closed" value="true" />
+      <created>1733252910070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733252910070</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mudança 3">
+      <option name="closed" value="true" />
+      <created>1733252948564</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733252948564</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +120,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mudança" />
-    <option name="LAST_COMMIT_MESSAGE" value="mudança" />
+    <MESSAGE value="mudança 1" />
+    <MESSAGE value="mudança 2" />
+    <MESSAGE value="mudança 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="mudança 3" />
   </component>
 </project>
