@@ -56,7 +56,6 @@ public class Naruto {
         q3.opcaoC = "c) Gyuki";
         q3.opcaoD = "d) Kurama";
         q3.opcaoE = "e) Chomei";
-
         q3.correta = "d";
 
         q3.escrevaQuestao();
@@ -72,7 +71,6 @@ public class Naruto {
         q4.opcaoC = "c) Obito";
         q4.opcaoD = "d) Shisui";
         q4.opcaoE = "e) Fugaku";
-
         q4.correta = "a";
 
         q4.escrevaQuestao();
@@ -81,14 +79,14 @@ public class Naruto {
             cont++;
         }
 
-        Questao q5= new Questao();
-        q5.pergunta = "Pergunta 5: Quem criou a Akatsuki?";
-        q5.opcaoA= "a) Yahiko";
-        q5.opcaoB= "b) Obito";
-        q5.opcaoC= "c) Nagato/Pain";
-        q5.opcaoD= "d) Kaguya";
-        q5.opcaoE= "e) Itachi";
-        q5.correta= "c";
+        Questao q5 = new Questao();
+        q5.pergunta = "Pergunta 5: Quem foi o primeiro Hokage da Vila da Folha?";
+        q5.opcaoA = "a) Tobirama Senju";
+        q5.opcaoB = "b) Hashirama Senju";
+        q5.opcaoC = "c) Hiruzen Sarutobi";
+        q5.opcaoD = "d) Minato Namikaze";
+        q5.opcaoE = "e) Danzo Shimura";
+        q5.correta = "b";
 
         q5.escrevaQuestao();
         resp = q5.leiaResposta();
