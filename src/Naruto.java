@@ -124,14 +124,14 @@ public class Naruto {
             cont++;
         }
 
-        Questao q8= new Questao();
-        q8.pergunta = "Pergunta 8: Qual é o nome do lugar onde Naruto e Sasuke lutam no final do Shippuden?";
-        q8.opcaoA= "a) Vale do Fim";
-        q8.opcaoB= "b) Floresta da Morte";
-        q8.opcaoC= "c) Poço Esquecido";
-        q8.opcaoD= "d) Floresta do Fim";
-        q8.opcaoE= "e) Vale da Morte";
-        q8.correta= "a";
+        Questao q8 = new Questao();
+        q8.pergunta = "Pergunta 8: Qual é o objetivo da Akatsuki?";
+        q8.opcaoA = "a) Destruir a Vila da Folha";
+        q8.opcaoB = "b) Roubar as Kekkei Genkai";
+        q8.opcaoC = "c) Capturar todos os bijuus";
+        q8.opcaoD = "d) Recrutar ninjas poderosos";
+        q8.opcaoE = "e) Controlar o mundo ninja";
+        q8.correta = "c";
 
         q8.escrevaQuestao();
         resp = q8.leiaResposta();
