@@ -65,14 +65,15 @@ public class Naruto {
             cont++;
         }
 
-        Questao q4= new Questao();
-        q4.pergunta = "Pergunta 4: Quem é a progenitora do Chakra?";
-        q4.opcaoA= "a) Sakura";
-        q4.opcaoB= "b) Konan";
-        q4.opcaoC= "c) Hinata";
-        q4.opcaoD= "d) Kaguya";
-        q4.opcaoE= "e) Tenten";
-        q4.correta= "d";
+        Questao q4 = new Questao();
+        q4.pergunta = "Pergunta 4: Qual é o nome do irmão mais velho do Sasuke?";
+        q4.opcaoA = "a) Itachi";
+        q4.opcaoB = "b) Madara";
+        q4.opcaoC = "c) Obito";
+        q4.opcaoD = "d) Shisui";
+        q4.opcaoE = "e) Fugaku";
+
+        q4.correta = "a";
 
         q4.escrevaQuestao();
         resp = q4.leiaResposta();
